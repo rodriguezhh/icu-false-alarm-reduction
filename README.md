@@ -1,1 +1,10 @@
-# icu-false-alarm-reduction
+## Embedding-Driven Multimodal Siamese Framework for Robust False Alarm Detection in Critical Care Monitoring
+
+**Abastract:** False arrhythmia alarms in Intensive Care Units (ICUs) can reach false alarm rates as high as 88.8%, contributing to alarm fatigue and delayed clinical responses. Despite recent progress with deep learning, robust false-alarm suppression remains challenging in noisy, heterogeneous multimodal recordings and under strong class imbalance.
+
+This paper proposes a lightweight embedding-driven multimodal Siamese framework that validates arrhythmia alarms by jointly modeling (i) raw multichannel physiological waveforms, (ii) arrhythmia-type metadata, and (iii) a rule-based model output as structured prior knowledge.
+The architecture uses multi-scale convolutional encoders in a Siamese configuration to learn discriminative representations from paired alarm and reference segments, together with a task-specific distance-based constraint designed to improve separability under imbalance.
+To increase robustness, the pipeline includes extensive preprocessing and a temporal window-shifting augmentation strategy.
+
+Experiments on the PhysioNet/Computing in Cardiology Challenge 2015 dataset were conducted using stratified five-fold cross-validation and evaluated with both the official Challenge metric and standard classification measures. The proposed method achieves a Challenge score of $0.8498 ± 0.0686$ and an F1-score of $0.9101 ± 0.0406$, outperforming replicated state-of-the-art baselines while using substantially fewer trainable parameters ($878,925$ vs.\ $3.28$M).
+Ablation results show that combining data augmentation, arrhythmia embeddings, and rule-based priors yields complementary gains, supporting the benefit of integrating multimodal representation learning with explicit domain knowledge. These findings indicate that the proposed framework is a practical and computationally efficient solution for real-time false alarm reduction in ICU monitoring, and a promising direction for deploying clinically informed multimodal AI at the bedside.
