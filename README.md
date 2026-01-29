@@ -24,6 +24,6 @@ The supplementary materials associated with this work are provided as a PDF file
 
 📄 **Supplementary Materials (PDF):**
 
-* [Supplementary Material PDF](.Supplementary_Materials/supplementary_materials.pdf)
+* [Supplementary Material PDF](https://github.com/rodriguezhh/icu-false-alarm-reduction/blob/main/Supplementary_Material/supplementary_material.pdf)
 
 > The supplementary document contains additional architectural details, experimental configurations, and extended results that complement the main manuscript.
